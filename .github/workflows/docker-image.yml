@@ -21,6 +21,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: "khaihoangdev/nginx-ui:${{ github.GITHUB_BASE_REF }}"
+        tags: khaihoangdev/nginx-ui:latest
       
       
