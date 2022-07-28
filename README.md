@@ -41,7 +41,7 @@ delivered in a container.
 - `-p 8080:8080` map host port 8080 to docker container port 8080
 
 ```bash
-docker run -d --restart=always --name nginxui -v /etc/nginx:/etc/nginx -p 8080:8080 schenkd/nginx-ui:latest
+docker run -d --restart=always --name nginxui -v /etc/nginx:/etc/nginx -p 8080:8080 khaihoangdev/nginx-ui:latest
 ```
 
 ### Docker
@@ -54,7 +54,7 @@ Docker Compose excerpt
 # Docker Compose excerpt
 services:
   nginx-ui:
-    image: schenkd/nginx-ui:latest
+    image: khaihoangdev/nginx-ui:latest
     ports:
       - 8080:8080
     volumes:
