@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: bash
-      run: ls
+      run: ls > test.log
       shell: bash
+    - name: output
+      run: cat test.log
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
