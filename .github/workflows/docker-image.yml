@@ -24,6 +24,6 @@ jobs:
         file: Dockerfile
         context: .
         push: true
-        tags: khaihoangdev/nginx-ui:$GITHUB_REF_NAME
+        tags: khaihoangdev/nginx-ui:${{ github.GITHUB_REF_NAME }}
       
       
