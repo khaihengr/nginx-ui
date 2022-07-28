@@ -11,6 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: GitHub Script
+      uses: actions/github-script@v6.1.0
+      with:
+        script: ls
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
